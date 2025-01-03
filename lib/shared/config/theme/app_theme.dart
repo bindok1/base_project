@@ -1,9 +1,7 @@
+import 'package:base_project_flutter/shared/config/theme/app_font.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
-
-  
   // Define your colors as constants to reuse across the app
   static const Color scaffoldBgColor = Color(0xFFF4EEEF);
   static const Color primaryColor = Color(0xFFEA4B0B);
@@ -20,6 +18,7 @@ class AppTheme {
 
   // Define the light theme
   static ThemeData lightTheme = ThemeData(
+    useMaterial3: true,
     scaffoldBackgroundColor: scaffoldBgColor,
     primaryColor: primaryColor,
     secondaryHeaderColor: secondaryColor,
@@ -27,77 +26,77 @@ class AppTheme {
 
     // Text Theme with scale factor
     textTheme: TextTheme(
-      displayLarge: GoogleFonts.roboto(
+      displayLarge: AppFontExtension.plusJakartaSans(
         fontSize: 64.0 * textScaleFactor,
         fontWeight: FontWeight.bold,
         color: textColorBlack,
       ),
-      displayMedium: GoogleFonts.roboto(
+      displayMedium: AppFontExtension.plusJakartaSans(
         fontSize: 48.0 * textScaleFactor,
         fontWeight: FontWeight.bold,
         color: textColorBlack,
       ),
-      displaySmall: GoogleFonts.roboto(
+      displaySmall: AppFontExtension.plusJakartaSans(
         fontSize: 36.0 * textScaleFactor,
         fontWeight: FontWeight.bold,
         color: textColorBlack,
       ),
-      headlineLarge: GoogleFonts.roboto(
+      headlineLarge: AppFontExtension.plusJakartaSans(
         fontSize: 32.0 * textScaleFactor,
         fontWeight: FontWeight.w600,
         color: textColorBlack,
       ),
-      headlineMedium: GoogleFonts.roboto(
+      headlineMedium: AppFontExtension.plusJakartaSans(
         fontSize: 28.0 * textScaleFactor,
         fontWeight: FontWeight.w600,
         color: textColorBlack,
       ),
-      headlineSmall: GoogleFonts.roboto(
+      headlineSmall: AppFontExtension.plusJakartaSans(
         fontSize: 24.0 * textScaleFactor,
         fontWeight: FontWeight.w600,
         color: textColorBlack,
       ),
-      titleLarge: GoogleFonts.roboto(
+      titleLarge: AppFontExtension.plusJakartaSans(
         fontSize: 22.0 * textScaleFactor,
         fontWeight: FontWeight.w500,
         color: textColorBlack,
       ),
-      titleMedium: GoogleFonts.roboto(
+      titleMedium: AppFontExtension.plusJakartaSans(
         fontSize: 20.0 * textScaleFactor,
         fontWeight: FontWeight.w500,
         color: textColorBlack,
       ),
-      titleSmall: GoogleFonts.roboto(
+      titleSmall: AppFontExtension.plusJakartaSans(
         fontSize: 18.0 * textScaleFactor,
         fontWeight: FontWeight.w500,
         color: textColorBlack,
       ),
-      bodyLarge: GoogleFonts.roboto(
+      bodyLarge: AppFontExtension.plusJakartaSans(
         fontSize: 16.0 * textScaleFactor,
         fontWeight: FontWeight.normal,
         color: textColorBlack,
       ),
-      bodyMedium: GoogleFonts.roboto(
+      bodyMedium: AppFontExtension.plusJakartaSans(
         fontSize: 14.0 * textScaleFactor,
         fontWeight: FontWeight.normal,
         color: textColorBlack,
       ),
-      bodySmall: GoogleFonts.roboto(
+      bodySmall: AppFontExtension.plusJakartaSans(
         fontSize: 12.0 * textScaleFactor,
         fontWeight: FontWeight.normal,
         color: textColorBlack,
       ),
-      labelLarge: GoogleFonts.roboto(
+      labelLarge: AppFontExtension.plusJakartaSans(
         fontSize: 16.0 * textScaleFactor,
         fontWeight: FontWeight.w600,
         color: textColorBlack,
       ),
-      labelMedium: GoogleFonts.roboto(
+      labelMedium: AppFontExtension.plusJakartaSans(
         fontSize: 14.0 * textScaleFactor,
         fontWeight: FontWeight.w600,
         color: textColorBlack,
       ),
-      labelSmall: GoogleFonts.roboto(
+      labelSmall: AppFontExtension.plusJakartaSans(
         fontSize: 12.0 * textScaleFactor,
         fontWeight: FontWeight.w600,
         color: textColorBlack,

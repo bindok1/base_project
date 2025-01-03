@@ -1,3 +1,4 @@
+import 'package:base_project_flutter/core/utils/logger_util.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 
 abstract class NetworkInfo {
@@ -15,7 +16,7 @@ class NetworkInfoImpl implements NetworkInfo {
     try {
       return await internetChecker.hasConnection;
     } catch (e) {
-      print('Error checking connection: $e');
+      LoggerUtil.err('Error checking connection: $e');
       return false;
     }
   }
@@ -25,7 +26,7 @@ class NetworkInfoImpl implements NetworkInfo {
     try {
       return await internetChecker.hasConnection;
     } catch (e) {
-      print('Error checking internet connection: $e');
+      LoggerUtil.err('Error checking internet connection: $e');
       return false;
     }
   }
